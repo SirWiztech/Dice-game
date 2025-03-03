@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICE GAME</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <i class='bx bx-menu' id="menu" onclick="menu()"></i>
+
+    <span class="bit" id="menu1">
+        <i class='bx bx-x' id="x" onclick="closemenu()"></i><br><br><br>
+        <a><i class='bx bxs-game' ></i>PLAY GAME</a>
+        <a href="https://wa.me/+2348108787625"><i class='bx bxs-contact' ></i>CONTACT ME</a>
+        <a><i class='bx bx-support' ></i>SUPPORT</a>
+        <a href="index.html"><i class='bx bx-exit' ></i>EXIT</a>
+    
+    </span>
+
+    <h2 class="h2">WIZTECH <span class='bx bx-dice-6 bx-spin' style="font-size: 5rem; color: yellow; height: 50px; "></span>DICE GAME</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nostrum corrupti 
+        ga ad impedit id tenetur iste cupiditate quam, nesciunt minus. Distincti
+        o numquam ex expedita rerum. Architecto, quibusdam asperiores. Lorem ipsum dolor si
+        t amet consectetur adipisicing elit. Iusto similique perferendis beatae odio libero impedit aliquam?
+         Exercitationem consectetur veritatis temporibus.
+    </p>
+    <br><br>
+    <button class="btn1" >PLAY NOW !!<br><span class='bx bx-play-circle bx-flashing' style="font-size: 2rem;"></i></button>
+
+    <div id="great">
+        USERNAME: (min 7 characters)<br><br>
+        <input type="text" id="name1" class="detail" placeholder="Enter your full name ( ! Upto 7 characters)"><br>
+        AGE: <br><br>
+        <input type="number" id="age" class="detail" placeholder="Enter your Age"><br><br>
+        <button onclick="king()" id="detail">START GAME</button>
+    </div>
+
+    <div class=""><h2 id="result" class="result"></h2></div>
+
+    <div class="game">
+
+        <div>
+            <h2 id="user">PLAYER 1</h2>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+    
+            <img src="./IMAGES/dice6.png" alt="" height="50%" width="50%" id="imana">
+        </div>
+    
+    
+        <div>
+            <h2><span class='bx bx-child bx-flashing' style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></span>COMPUTER</h2>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    
+    
+            <img src="./IMAGES/dice6.png" alt="" height="50%" width="50%" id="imana">
+        </div>
+        
+    </div>
+
+    <button class="but2" onclick="dice()">ROLL DICE</button>
+
+
+
+    <h2 class="recent"><i class='bx bx-receipt bx-tada' ></i>RECENT RESULTS</h2>
+    <div id="recent1" class="score">
+    
+    </div>
+
+    <h2 class="recent"><i class='bx bxs-trophy bx-tada' ></i>TOP RANKINGS</h2>
+    <div id="out" class="score">
+
+    </div>
+
+
+    <footer>
+       <span class='bx bx-copyright bx-flashing' style="color: yellow; font-size: 5rem;"></span> <span class="span1">POWERED BY SIR WIZTECH</sapn>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

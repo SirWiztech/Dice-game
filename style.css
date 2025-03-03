@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 1em;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(158, 47, 7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.h2 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  border: 3px solid;
+  border-radius: 20px;
+  box-shadow: 10px 10px black;
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 50%;
+}
+
+.h2 img {
+  display: inline-block;
+}
+
+p {
+  margin-top: 8rem;
+  font-size: 1.5rem;
+  line-height: 50px;
+}
+
+.btn1 {
+  background-color: yellow;
+  width: 27%;
+  font-size: 1.2rem;
+  border-radius: 1.9rem;
+  box-shadow: 8px 8px black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+
+}
+
+.result {
+  color: rgb(4, 253, 4);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-shadow: 5px 5px black;
+  margin-top: 1rem;
+  width: 50%;
+  white-space: nowrap;
+}
+
+.btn1:hover {
+  transform: scale(1.3);
+}
+
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.game h2 {
+  background-color: black;
+  color: yellow;
+  border-radius: 3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.game img {
+  width: 80%;
+  margin-top: -7rem;
+}
+
+.but2 {
+  margin-top: 5rem;
+  background-color: yellow;
+  width: 30%;
+  font-size: 1.5rem;
+  border-radius: 1.9rem;
+  box-shadow: 9px 9px black;
+  font-weight: bolder;
+  outline: 5px solid black;
+}
+
+.recent {
+  background-color: black;
+  border-radius: 2rem;
+  border: 3px solid;
+  margin-top: 20rem;
+}
+
+#recent1 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  /* border: 4px solid yellow; */
+  /* background-color: yellow; */
+
+  border-radius: 2rem;
+}
+
+#great {
+  border: 3px solid yellow;
+  margin-top: 10%;
+  height: 320px;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  outline: 5px solid white;
+  box-shadow: 8px 8px 8px 8px black;
+  overflow: none;
+}
+
+#great #detail {
+  margin-top: 5%;
+  width: 40%;
+  margin-left: 30%;
+  border-radius: 1rem;
+  font-size: 0.9em;
+  flex-wrap: nowrap;
+  font-weight: bolder;
+  background-color: yellow;
+  box-shadow: 5px 5px 5px;
+}
+
+#detail:hover {
+  transform: scale(1.3);
+}
+
+.visible {
+  display: none;
+}
+
+.score {
+  border: 10px solid yellow;
+  outline: 5px solid black;
+}
+
+#out {
+  margin: 10%;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+footer{
+    font-size: 1.4rem;
+    margin-top: 20%;
+    flex-wrap: nowrap;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.btn1{
+    height: 115px;
+}
+
+#menu{
+    font-size: 3rem;
+    position: relative;
+    left: 45%;
+}
+
+.bit{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    border: 3px solid;
+    width: 99%;
+    height: 400px;
+    background-color: white;
+    color: rgb(158, 47, 7);
+    position: absolute;
+    bottom: 50%;
+    z-index: 1;
+    visibility: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(158, 47, 7);
+}
+
+#x{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    font-size: 5rem;
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .h2 {
+    max-width: 90%;
+    width: 100%;
+    display: flex;
+  }
+
+  .btn1 {
+    white-space: nowrap;
+    width: 40%;
+  }
+  .game div h2 {
+    white-space: nowrap;
+    font-size: 1rem;
+  }
+
+  .but2 {
+    white-space: nowrap;
+    width: 50%;
+  }
+
+  .recent {
+    margin-top: 150px;
+  }
+
+  #great {
+    width: 85%;
+  }
+
+  #great #detail {
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+  }
+
+  #recent1{
+    white-space: nowrap;
+    font-size: 1.2rem;
+  }
+
+  footer{
+    white-space: nowrap;
+    font-size: 1rem;
+    margin-left: -20%;
+  }
+
+  .span1{
+    margin-left: -60px;
+    font-size: 1.2rem;
+  }
+
+  #imana{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .game {
+    margin-left: 7%;
+  }
+
+  .game div h2{
+    font-size: 0.9rem;
+    
+  }
+
+  .recent{
+    white-space: nowrap;
+  }
+
+  footer .span1{
+    margin-left: -17%;
+  }
+
+  #imana{
+  
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 325px) {
+  p {
+    width: 135%;
+  }
+
+  .btn1 {
+    width: 70%;
+  }
+
+  .game {
+    font-size: 0.8rem;
+    gap: 2px;
+    
+  }
+
+  .game div h2{
+    width: 92%;
+  }
+
+
+
+  .but2 {
+    font-size: 1rem;
+  }
+
+  #recent1 {
+    white-space: nowrap;
+    font-size: 1.1rem;
+  }
+
+  #great #detail {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .recent{
+    width: 110%;
+    font-size: 1.2rem;
+  }
+
+  footer .span1{
+    font-size: 1.1rem;
+    margin-right: 20px;
+  }
+
+  #imana{
+    width: 90%;
+  }
+
+}
